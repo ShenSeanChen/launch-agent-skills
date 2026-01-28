@@ -8,7 +8,7 @@ whatsapp-parser skill or run directly from command line.
 Usage:
     python scripts/parse_whatsapp.py examples/sample-whatsapp-chat.txt
 
-Author: Sean Chen
+Author: Shen Sean Chen
 License: MIT
 """
 
