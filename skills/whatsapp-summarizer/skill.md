@@ -1,4 +1,4 @@
-# Directory: launch-agent-skills/skills/chat-summarizer/skill.md
+# Directory: launch-agent-skills/skills/whatsapp-summarizer/skill.md
 ---
 name: Chat Summarizer
 description: Generate concise summaries from parsed chat conversations, identifying key topics, decisions, and themes
@@ -177,4 +177,4 @@ key_patterns = {
 ## Related Skills
 
 - `whatsapp-parser` - Parse raw chat files first
-- `action-extractor` - Deep dive into action items
+- `whatsapp-action-extractor` - Deep dive into action items

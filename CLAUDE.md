@@ -12,23 +12,25 @@ This is a tutorial repository for learning Agent Skills. It contains:
 
 ## Available Skills
 
-### WhatsApp Skills (Video 1)
+### WhatsApp Skills
 - `skills/whatsapp-parser/skill.md` - Parse WhatsApp chat exports
-- `skills/chat-summarizer/skill.md` - Summarize conversations
-- `skills/action-extractor/skill.md` - Extract TODOs and action items
+- `skills/whatsapp-summarizer/skill.md` - Summarize conversations
+- `skills/whatsapp-action-extractor/skill.md` - Extract TODOs and action items
 
-### Project Setup Skills (Video 2)
-- `skills/fastapi-setup/skill.md` - FastAPI project scaffolding
-- `skills/supabase-setup/skill.md` - Supabase database setup
+### RAG Setup Skills
+- `skills/rag-setup/skill.md` - FastAPI RAG project setup (launch-rag or launch-agentic-rag)
+- `skills/rag-database/skill.md` - Supabase + pgvector database setup
+- `skills/rag-tools/skill.md` - Google Calendar/Gmail tools (agentic-rag only)
 
 ## How to Use Skills
 
 When the user asks about:
 - WhatsApp, chat parsing, messages → load `whatsapp-parser` skill
-- Summaries, conversation overview → load `chat-summarizer` skill
-- TODOs, action items, follow-ups → load `action-extractor` skill
-- FastAPI, API setup, project structure → load `fastapi-setup` skill
-- Supabase, database, vector DB → load `supabase-setup` skill
+- Summaries, conversation overview → load `whatsapp-summarizer` skill
+- TODOs, action items, follow-ups → load `whatsapp-action-extractor` skill
+- FastAPI, RAG, API setup, launch-rag, launch-agentic-rag → load `rag-setup` skill
+- Supabase, database, vector DB, pgvector → load `rag-database` skill
+- Google Calendar, Gmail, agent tools → load `rag-tools` skill
 
 ## Code Standards
 

@@ -52,3 +52,11 @@ htmlcov/
 
 # Node (if any frontend demos)
 node_modules/
+
+# Cloned projects for demo/testing
+fastapi-project/
+
+# Demo output files
+examples/*_parsed.json
+examples/*_summary.md
+examples/*_actions.json

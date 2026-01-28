@@ -155,5 +155,5 @@ media_count = sum(1 for msg in messages if msg['is_media'])
 
 ## Related Skills
 
-- `chat-summarizer` - Generate summaries from parsed chats
-- `action-extractor` - Find TODOs and action items in messages
+- `whatsapp-summarizer` - Generate summaries from parsed chats
+- `whatsapp-action-extractor` - Find TODOs and action items in messages

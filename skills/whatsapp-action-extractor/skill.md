@@ -1,4 +1,4 @@
-# Directory: launch-agent-skills/skills/action-extractor/skill.md
+# Directory: launch-agent-skills/skills/whatsapp-action-extractor/skill.md
 ---
 name: Action Item Extractor
 description: Extract TODOs, commitments, follow-ups, and action items from chat conversations
@@ -202,4 +202,4 @@ When assignee is ambiguous:
 ## Related Skills
 
 - `whatsapp-parser` - Parse raw chat first
-- `chat-summarizer` - Get broader context
+- `whatsapp-summarizer` - Get broader context

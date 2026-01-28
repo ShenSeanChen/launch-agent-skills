@@ -14,19 +14,33 @@
 
 ## 🎬 Video Story: What You'll Learn
 
-This tutorial walks you through **Claude Skills** - a way to teach Claude reusable knowledge so you don't have to explain the same thing over and over.
+This tutorial teaches you **Claude Skills** - a way to create reusable AI playbooks so you never have to re-explain the same instructions again.
 
-### The Problem
-Every time you want Claude to do something specific (like parse a WhatsApp export), you have to explain the format, the edge cases, and the expected output. That's tedious.
+### The Journey
 
-### The Solution: Skills
-Define the knowledge **once** in a `skill.md` file, and Claude references it whenever needed.
+**Part 1: The Problem (WhatsApp Example)**
+You export a WhatsApp chat and want to:
+- Parse it into structured data
+- Get a summary of key decisions
+- Extract all action items
 
-### What We'll Build
-A **WhatsApp Chat Analyzer** that:
-1. **Parses** WhatsApp export files into structured JSON
-2. **Summarizes** conversations with key topics and decisions  
-3. **Extracts** action items, TODOs, and follow-ups
+Without skills, you'd need to explain the format, edge cases, and expected output every single time.
+
+**Part 2: The Solution (Skills)**
+Define the knowledge **once** in `skill.md` files, and Claude references them whenever needed.
+
+We'll build:
+1. **WhatsApp Parser** - Extract messages into structured JSON
+2. **Chat Summarizer** - Generate executive summaries with key topics
+3. **Action Extractor** - Find all TODOs and action items
+
+**Part 3: Real-World Application (RAG Backend)**
+Then we'll use skills to set up a production-ready FastAPI backend:
+- **RAG Setup Skill** - Clone and configure [launch-rag](https://github.com/ShenSeanChen/launch-rag) or [launch-agentic-rag](https://github.com/ShenSeanChen/launch-agentic-rag)
+- **Database Skill** - Set up Supabase with pgvector for vector search
+- **Tools Skill** - (Optional) Add Google Calendar/Gmail integration
+
+From simple chat parsing to full AI backend - all using the same skill pattern.
 
 ---
 
@@ -63,31 +77,35 @@ A **WhatsApp Chat Analyzer** that:
 
 ```
 launch-agent-skills/
-├── CLAUDE.md                    # Project instructions for Claude Code
-├── README.md                    # This file
+├── CLAUDE.md                          # Project instructions for Claude Code
+├── README.md                          # This file
 │
-├── skills/                      # 🎯 The Skills (main content)
-│   ├── whatsapp-parser/
-│   │   └── skill.md            # Parse WhatsApp exports
-│   ├── chat-summarizer/
-│   │   └── skill.md            # Generate summaries
-│   ├── action-extractor/
-│   │   └── skill.md            # Find TODOs & action items
-│   ├── fastapi-setup/
-│   │   └── skill.md            # FastAPI project scaffolding
-│   └── supabase-setup/
-│       └── skill.md            # Supabase + pgvector setup
+├── skills/                            # 🎯 The Skills (main content)
+│   │
+│   ├── whatsapp-parser/               # Part 1: WhatsApp Skills
+│   │   └── skill.md                   # Parse WhatsApp chat exports
+│   ├── whatsapp-summarizer/
+│   │   └── skill.md                   # Summarize conversations
+│   ├── whatsapp-action-extractor/
+│   │   └── skill.md                   # Extract TODOs and action items
+│   │
+│   ├── rag-setup/                     # Part 2: RAG Backend Skills
+│   │   └── skill.md                   # FastAPI project setup (launch-rag/agentic-rag)
+│   ├── rag-database/
+│   │   └── skill.md                   # Supabase + pgvector setup
+│   └── rag-tools/
+│       └── skill.md                   # Google Calendar/Gmail (optional)
 │
-├── examples/                    # Test data
-│   ├── sample-whatsapp-chat.txt # Synthetic WhatsApp conversation
-│   └── expected-output.json     # Reference output
+├── examples/                          # Test data
+│   ├── sample-whatsapp-chat.txt       # Synthetic WhatsApp conversation
+│   └── expected-output.json           # Reference output
 │
 ├── scripts/
-│   └── parse_whatsapp.py        # Standalone parser (skill resource)
+│   └── parse_whatsapp.py              # Standalone parser (skill resource)
 │
 └── docs/
-    ├── skill-anatomy.md         # Deep dive on skill structure
-    └── mcp-vs-skills.md         # MCP vs Skills comparison
+    ├── skill-anatomy.md               # Deep dive on skill structure
+    └── mcp-vs-skills.md               # MCP vs Skills comparison
 ```
 
 ---
@@ -114,47 +132,51 @@ claude .
 
 Try these prompts in Claude Code to test the skills:
 
-#### 1. Test WhatsApp Parser Skill
+#### Part 1: WhatsApp Skills
+
+**1. Parse WhatsApp Export**
 ```
 Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ```
+Expected: Structured JSON with participants, message count, and messages array.
 
-**Expected**: Claude reads the skill, parses the file, returns structured JSON with participants, message count, and messages array.
-
-#### 2. Test Chat Summarizer Skill
+**2. Summarize Conversation**
 ```
 Summarize the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ```
+Expected: Executive summary, key topics discussed, decisions made, participant stats.
 
-**Expected**: Executive summary, key topics discussed, decisions made, participant stats.
-
-#### 3. Test Action Extractor Skill
+**3. Extract Action Items**
 ```
 Extract all action items and TODOs from examples/sample-whatsapp-chat.txt
 ```
+Expected: List of action items with assignees, deadlines, and priority levels.
 
-**Expected**: List of action items with assignees, deadlines, and priority levels.
-
-#### 4. Test Skill Chaining
+**4. Chain All WhatsApp Skills**
 ```
 Parse the sample WhatsApp chat, summarize it, and extract all action items
 ```
+Expected: Claude uses all 3 skills in sequence for comprehensive analysis.
 
-**Expected**: Claude uses all 3 skills in sequence, providing comprehensive analysis.
+#### Part 2: RAG Backend Skills
 
-#### 5. Test FastAPI Setup Skill
+**5. Set Up FastAPI RAG Backend**
 ```
-Use the fastapi-setup skill to create a new project structure for a REST API
+Set up a FastAPI backend for my new AI agent project using launch-rag
 ```
+Expected: Claude clones repo, sets up environment, installs dependencies, configures .env.
 
-**Expected**: Claude generates folder structure, main.py, config files following the skill's patterns.
-
-#### 6. Test Supabase Setup Skill
+**6. Configure Supabase Database**
 ```
-Show me how to set up Supabase with pgvector for a RAG application
+Set up Supabase with pgvector for my RAG application
 ```
+Expected: Automated CLI setup with project creation, API keys, SQL migrations.
 
-**Expected**: SQL initialization script, Python client code, environment variables.
+**7. Add Agent Tools (Optional)**
+```
+Set up Google Calendar and Gmail tools for my agentic RAG agent
+```
+Expected: Service account setup, API enablement, credentials configuration.
 
 ### Sample Data Explanation
 
