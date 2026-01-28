@@ -205,7 +205,7 @@ Input/output example.
 
 ## Social & Connect
 
-- **YouTube**: [@SeanTechStories](https://youtube.com/@SeanTechStories)
+- **YouTube**: [@SeanAIStories](https://youtube.com/@SeanAIStories)
 - **Twitter/X**: [@ShenSeanChen](https://twitter.com/ShenSeanChen)
 - **LinkedIn**: [in/shen-sean-chen](https://linkedin.com/in/shen-sean-chen)
 - **Discord**: [Join our community](#)
