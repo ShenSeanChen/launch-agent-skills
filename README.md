@@ -1,91 +1,105 @@
 # Directory: launch-agent-skills/README.md
 # Launch Agent Skills
 
-> **Learn Agent Skills, Claude Skills & Subagents with Real Examples**
+> **Learn Claude Skills: Teach AI to Follow Your Playbooks**
 
-This repository accompanies a two-part YouTube tutorial series showing you how to create and use Agent Skills in Claude Code.
-
-📹 **Video 1**: [Agent Skills Explained - WhatsApp Analyzer Demo](#) _(coming soon)_  
-📹 **Video 2**: [Build a Project Wizard with Subagents](#) _(coming soon)_
+📹 **YouTube Tutorial**: [Agent Skills Explained with Real Examples](#) _(link coming soon)_
 
 🚀 **X Post**: [Link](#)  
 💻 **Related Repos**: [launch-rag](https://github.com/ShenSeanChen/launch-rag) | [launch-agentic-rag](https://github.com/ShenSeanChen/launch-agentic-rag) | [launch-mcp-demo](https://github.com/ShenSeanChen/launch-mcp-demo)  
-☕️ **Buy me a coffee**: [Cafe Latte](#)  
-🤖 **Discord**: [Join our community](#)
+☕️ **Buy me a coffee**: [Cafe Latte](https://buy.stripe.com/5kA176bA895ggog4gh)  
+🤖 **Discord**: [Join our community](https://discord.com/invite/TKKPzZheua)
 
 ---
 
-## What Are Agent Skills?
+## 🎬 Video Story: What You'll Learn
 
-**Skills** are reusable instructions that teach Claude how to perform specific tasks. Instead of explaining the same thing every time, you define a skill once and Claude references it whenever relevant.
+This tutorial walks you through **Claude Skills** - a way to teach Claude reusable knowledge so you don't have to explain the same thing over and over.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    SKILLS vs MCP                            │
-├─────────────────────────────────────────────────────────────┤
-│  MCP = CONNECTS Claude to data        Skills = TEACHES      │
-│  (APIs, databases, files)             Claude what to DO     │
-├─────────────────────────────────────────────────────────────┤
-│  Example: MCP gives Claude access     Example: Skill tells  │
-│  to your WhatsApp chat files          Claude HOW to parse   │
-│                                       the WhatsApp format   │
-└─────────────────────────────────────────────────────────────┘
-```
+### The Problem
+Every time you want Claude to do something specific (like parse a WhatsApp export), you have to explain the format, the edge cases, and the expected output. That's tedious.
 
-### Skill Anatomy (Progressive Disclosure)
+### The Solution: Skills
+Define the knowledge **once** in a `skill.md` file, and Claude references it whenever needed.
+
+### What We'll Build
+A **WhatsApp Chat Analyzer** that:
+1. **Parses** WhatsApp export files into structured JSON
+2. **Summarizes** conversations with key topics and decisions  
+3. **Extracts** action items, TODOs, and follow-ups
+
+---
+
+## 🧠 Core Concepts
+
+### What Are Skills?
+
+**Skills** are markdown files that teach Claude domain-specific knowledge. They follow a "progressive disclosure" pattern:
 
 | Component | When Loaded | Purpose |
 |-----------|-------------|---------|
-| **Metadata** | Always | Name, description, triggers |
-| **Body** | On demand | Detailed instructions |
-| **Resources** | Referenced | Scripts, templates |
+| **Metadata** | Always | Name, description, trigger keywords |
+| **Body** | On demand | Detailed instructions, step-by-step guide |
+| **Resources** | Referenced | Scripts, templates, examples |
+
+### Skills vs MCP vs Subagents
+
+| Concept | What It Does | Analogy |
+|---------|--------------|---------|
+| **Skills** | Teaches Claude HOW to do something | A playbook or recipe |
+| **MCP** | Connects Claude to external data/tools | A key to the library |
+| **Subagents** | Spawns specialized workers for subtasks | A team of specialists |
+
+**Key insight**: 
+- MCP = **Access** (can I read this file?)
+- Skills = **Knowledge** (how do I parse this format?)
+- Subagents = **Orchestration** (who handles what part?)
+
+> 💡 **Note**: This tutorial focuses on **Skills**. Subagents are typically implemented at the framework level (LangGraph, CrewAI) or through Claude's natural task decomposition. Skills provide the "playbooks" that any agent (main or sub) can use.
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 launch-agent-skills/
-├── CLAUDE.md                    # Claude Code project instructions
+├── CLAUDE.md                    # Project instructions for Claude Code
 ├── README.md                    # This file
 │
-├── skills/                      # 🎯 Agent Skills (the main content)
-│   ├── whatsapp-parser/         # Video 1: WhatsApp skills
-│   │   └── skill.md
+├── skills/                      # 🎯 The Skills (main content)
+│   ├── whatsapp-parser/
+│   │   └── skill.md            # Parse WhatsApp exports
 │   ├── chat-summarizer/
-│   │   └── skill.md
+│   │   └── skill.md            # Generate summaries
 │   ├── action-extractor/
-│   │   └── skill.md
-│   ├── fastapi-setup/           # Video 2: Project setup skills
-│   │   └── skill.md
+│   │   └── skill.md            # Find TODOs & action items
+│   ├── fastapi-setup/
+│   │   └── skill.md            # FastAPI project scaffolding
 │   └── supabase-setup/
-│       └── skill.md
+│       └── skill.md            # Supabase + pgvector setup
 │
-├── examples/                    # Sample data for demos
-│   ├── sample-whatsapp-chat.txt
-│   └── expected-output.json
+├── examples/                    # Test data
+│   ├── sample-whatsapp-chat.txt # Synthetic WhatsApp conversation
+│   └── expected-output.json     # Reference output
 │
-├── scripts/                     # Helper scripts (skill resources)
-│   └── parse_whatsapp.py
+├── scripts/
+│   └── parse_whatsapp.py        # Standalone parser (skill resource)
 │
-└── docs/                        # Additional documentation
-    ├── skill-anatomy.md
-    └── mcp-vs-skills.md
+└── docs/
+    ├── skill-anatomy.md         # Deep dive on skill structure
+    └── mcp-vs-skills.md         # MCP vs Skills comparison
 ```
 
 ---
 
-## Video 1: WhatsApp Analyzer (Agent Skills Intro)
+## 🧪 Testing the Skills
 
-**Goal**: Understand what Skills are and create your first useful skill.
+### Prerequisites
 
-### Skills Covered:
+- [Claude Code](https://claude.ai/code) installed (`npm install -g @anthropic-ai/claude-code`)
+- Or Claude Pro/Max subscription with Claude Code access
 
-1. **WhatsApp Parser Skill** - Parse WhatsApp export format into structured data
-2. **Chat Summarizer Skill** - Generate conversation summaries
-3. **Action Extractor Skill** - Find TODOs, commitments, and follow-ups
-
-### Quick Start:
+### Quick Start
 
 ```bash
 # Clone the repo
@@ -94,68 +108,80 @@ cd launch-agent-skills
 
 # Open in Claude Code
 claude .
-
-# Try the WhatsApp parser skill
-# In Claude Code, say: "Parse the sample WhatsApp chat in examples/"
 ```
+
+### Sample Test Prompts
+
+Try these prompts in Claude Code to test the skills:
+
+#### 1. Test WhatsApp Parser Skill
+```
+Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
+```
+
+**Expected**: Claude reads the skill, parses the file, returns structured JSON with participants, message count, and messages array.
+
+#### 2. Test Chat Summarizer Skill
+```
+Summarize the WhatsApp chat in examples/sample-whatsapp-chat.txt
+```
+
+**Expected**: Executive summary, key topics discussed, decisions made, participant stats.
+
+#### 3. Test Action Extractor Skill
+```
+Extract all action items and TODOs from examples/sample-whatsapp-chat.txt
+```
+
+**Expected**: List of action items with assignees, deadlines, and priority levels.
+
+#### 4. Test Skill Chaining
+```
+Parse the sample WhatsApp chat, summarize it, and extract all action items
+```
+
+**Expected**: Claude uses all 3 skills in sequence, providing comprehensive analysis.
+
+#### 5. Test FastAPI Setup Skill
+```
+Use the fastapi-setup skill to create a new project structure for a REST API
+```
+
+**Expected**: Claude generates folder structure, main.py, config files following the skill's patterns.
+
+#### 6. Test Supabase Setup Skill
+```
+Show me how to set up Supabase with pgvector for a RAG application
+```
+
+**Expected**: SQL initialization script, Python client code, environment variables.
+
+### Sample Data Explanation
+
+The `examples/sample-whatsapp-chat.txt` contains a **synthetic conversation** (no real data) between:
+- **Alice Developer** - Frontend engineer
+- **Bob Engineer** - Backend engineer  
+- **Carol PM** - Project manager
+
+The conversation includes:
+- Sprint planning discussion
+- Bug fix and PR workflow (PR #142)
+- Feature planning meeting
+- Decisions: FastAPI + Supabase for new microservice
+- Multiple TODOs and action items
+- Emojis, media placeholders, and multi-message threads
+
+This gives you realistic patterns to test all skills without any privacy concerns.
 
 ---
 
-## Video 2: FastAPI + Supabase Project Wizard (Subagents)
+## 📝 Skill File Anatomy
 
-**Goal**: See how Skills combine with Subagents for complex tasks.
-
-### Skills Covered:
-
-1. **FastAPI Setup Skill** - Project structure, routing, best practices
-2. **Supabase Setup Skill** - Database schema, pgvector, RLS policies
-
-### Subagent Architecture:
-
-```
-Main Agent (Project Wizard)
-    │
-    ├── Database Subagent
-    │       └── Uses: "Supabase Setup Skill"
-    │
-    └── API Subagent
-            └── Uses: "FastAPI Setup Skill"
-```
-
----
-
-## How to Use Skills in Claude Code
-
-### 1. Reference a Skill Directly
-
-```
-You: "Use the whatsapp-parser skill to parse this chat"
-Claude: *loads skill* *follows instructions*
-```
-
-### 2. Let Claude Auto-Discover
-
-```
-You: "Parse my WhatsApp export"
-Claude: *recognizes trigger words* *loads relevant skill*
-```
-
-### 3. Chain Multiple Skills
-
-```
-You: "Parse the chat, summarize it, and extract action items"
-Claude: *loads 3 skills* *executes in sequence*
-```
-
----
-
-## Creating Your Own Skills
-
-### Skill File Template
+Every skill follows this structure:
 
 ```markdown
 ---
-name: Your Skill Name
+name: Skill Name
 description: One-line description
 triggers:
   - keyword1
@@ -168,52 +194,108 @@ triggers:
 What this skill accomplishes.
 
 ## Instructions
-Step-by-step guide for Claude.
+Step-by-step guide for Claude to follow.
 
 ## Example
-Input/output example.
+Input/output examples.
+
+## Edge Cases
+How to handle unusual situations.
+
+## Related Skills
+Links to complementary skills.
 ```
+
+### How Claude Discovers Skills
+
+1. **Trigger keywords** in metadata match user query
+2. **CLAUDE.md** project file tells Claude which skills exist
+3. Claude loads the relevant skill body on demand
+4. If multiple skills apply, Claude chains them
+
+---
+
+## 🎨 Visual Guide
+
+_(Excalidraw diagrams to be added)_
+
+### Diagram 1: Skills Progressive Disclosure
+Shows how metadata → body → resources load progressively.
+
+### Diagram 2: MCP vs Skills vs Subagents
+Visual comparison of what each concept provides.
+
+### Diagram 3: WhatsApp Analyzer Flow
+User query → Parser Skill → Summarizer Skill → Action Extractor → Output
+
+---
+
+## 🛠 Creating Your Own Skills
+
+### Step 1: Create the folder
+```bash
+mkdir -p skills/my-skill
+touch skills/my-skill/skill.md
+```
+
+### Step 2: Write the skill
+```markdown
+---
+name: My Custom Skill
+description: Does something specific
+triggers:
+  - my trigger
+  - related keyword
+---
+
+# My Custom Skill
+
+## Purpose
+Explain what this skill does.
+
+## Instructions
+1. First, do this
+2. Then, do that
+3. Finally, return this format
+
+## Example
+Input: ...
+Output: ...
+```
+
+### Step 3: Update CLAUDE.md
+Add your skill to the project instructions so Claude knows it exists.
 
 ### Best Practices
 
-1. **Be Specific** - Vague instructions = vague results
-2. **Include Examples** - Show don't tell
-3. **Define Edge Cases** - What should Claude do when X happens?
-4. **Keep It Focused** - One skill = one capability
+| Do | Don't |
+|----|-------|
+| Be specific about formats | Leave instructions vague |
+| Include input/output examples | Assume Claude will figure it out |
+| Handle edge cases explicitly | Ignore error scenarios |
+| One skill = one capability | Cram everything into one skill |
 
 ---
 
-## Related Concepts
+## 🔗 Related Resources
 
-| Concept | What It Does | Example |
-|---------|--------------|---------|
-| **Skills** | Teaches Claude HOW | "Parse WhatsApp format this way" |
-| **MCP** | Connects Claude to data | "Access the file system" |
-| **Subagents** | Parallelizes work | "Spawn a research agent" |
-| **Rules** | Enforces constraints | "Always use TypeScript" |
+- **MCP Demo**: [launch-mcp-demo](https://github.com/ShenSeanChen/launch-mcp-demo) - Learn Model Context Protocol
+- **RAG Tutorial**: [launch-rag](https://github.com/ShenSeanChen/launch-rag) - Build a RAG system with Supabase
+- **Agentic RAG**: [launch-agentic-rag](https://github.com/ShenSeanChen/launch-agentic-rag) - Add tool calling to RAG
 
 ---
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/new-skill`)
-3. Add your skill to `skills/`
-4. Submit a Pull Request
-
----
-
-## Social & Connect
+## 👤 Connect
 
 - **YouTube**: [@SeanAIStories](https://youtube.com/@SeanAIStories)
 - **Twitter/X**: [@ShenSeanChen](https://twitter.com/ShenSeanChen)
 - **LinkedIn**: [in/shen-sean-chen](https://linkedin.com/in/shen-sean-chen)
-- **Discord**: [Join our community](#)
+- **Discord**: [Join our community](https://discord.com/invite/TKKPzZheua)
 - **GitHub**: [@ShenSeanChen](https://github.com/ShenSeanChen)
 
 ---
 
-## License
+## 📄 License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
@@ -221,4 +303,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ for the developer community**
 
-_This project demonstrates how to leverage Agent Skills to make AI assistants more capable and consistent._
+_Define once, use forever. That's the power of Agent Skills._
