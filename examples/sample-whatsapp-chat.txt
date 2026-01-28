@@ -1,0 +1,46 @@
+[28/01/2026, 09:15:32] Alice Developer: Hey Bob! Ready for the sprint planning?
+[28/01/2026, 09:16:01] Bob Engineer: Almost! Just finishing up the auth bug fix 🐛
+[28/01/2026, 09:16:45] Alice Developer: Nice! Can you also update the README with the new API endpoints?
+[28/01/2026, 09:17:02] Bob Engineer: TODO: Update README before PR
+[28/01/2026, 09:17:15] Bob Engineer: Will do! Should be quick
+[28/01/2026, 09:18:30] Alice Developer: <Media omitted>
+[28/01/2026, 09:18:45] Alice Developer: Here's the screenshot of the error I mentioned yesterday
+[28/01/2026, 09:19:12] Bob Engineer: Ah I see the issue! The token wasn't being refreshed properly
+[28/01/2026, 09:20:00] Bob Engineer: I'll fix that too. Should have both done by EOD
+[28/01/2026, 09:21:33] Alice Developer: Perfect! Let's discuss the new feature after standup
+[28/01/2026, 09:22:00] Carol PM: Good morning team! 👋 Standup in 10 minutes
+[28/01/2026, 09:22:15] Alice Developer: Morning Carol!
+[28/01/2026, 09:22:30] Bob Engineer: 👍
+[28/01/2026, 10:45:00] Carol PM: Great standup everyone! Action items:
+[28/01/2026, 10:45:15] Carol PM: 1. Bob: Auth fix + README update by EOD
+[28/01/2026, 10:45:30] Carol PM: 2. Alice: Review Bob's PR when ready
+[28/01/2026, 10:45:45] Carol PM: 3. Team: Feature planning meeting at 2pm
+[28/01/2026, 10:46:00] Alice Developer: Got it! I'll block off 2pm
+[28/01/2026, 10:46:30] Bob Engineer: Sounds good. I'll have the PR up by lunch
+[28/01/2026, 12:30:00] Bob Engineer: PR #142 is up! 🚀
+[28/01/2026, 12:30:15] Bob Engineer: https://github.com/team/project/pull/142
+[28/01/2026, 12:31:00] Alice Developer: Already reviewing! Looking good so far
+[28/01/2026, 12:45:22] Alice Developer: Left a few comments. Minor stuff - just some type hints missing
+[28/01/2026, 12:46:00] Bob Engineer: On it! Give me 5 minutes
+[28/01/2026, 12:52:00] Bob Engineer: Updated! Ready for re-review
+[28/01/2026, 13:00:00] Alice Developer: ✅ Approved! Great work Bob
+[28/01/2026, 13:00:30] Bob Engineer: Thanks! Merging now 🎉
+[28/01/2026, 13:01:00] Carol PM: Awesome teamwork! 
+[28/01/2026, 14:00:00] Carol PM: Reminder: Feature planning meeting starting now
+[28/01/2026, 14:00:15] Carol PM: Zoom link: https://zoom.us/j/123456789
+[28/01/2026, 14:01:00] Alice Developer: Joining!
+[28/01/2026, 14:01:15] Bob Engineer: Same here
+[28/01/2026, 15:30:00] Carol PM: Great meeting! Decisions made:
+[28/01/2026, 15:30:30] Carol PM: - We'll use FastAPI for the new microservice
+[28/01/2026, 15:30:45] Carol PM: - Supabase for the database (vector search needed)
+[28/01/2026, 15:31:00] Carol PM: - Target launch: end of February
+[28/01/2026, 15:31:30] Alice Developer: I can start on the FastAPI skeleton tomorrow
+[28/01/2026, 15:32:00] Bob Engineer: I'll research the Supabase pgvector setup
+[28/01/2026, 15:32:30] Carol PM: Perfect! Let's sync on Friday to review progress
+[28/01/2026, 15:33:00] Carol PM: Action item: Alice - FastAPI project setup by Thursday
+[28/01/2026, 15:33:15] Carol PM: Action item: Bob - Supabase research doc by Thursday
+[28/01/2026, 15:33:30] Alice Developer: Got it! Will share the repo link when ready
+[28/01/2026, 15:34:00] Bob Engineer: 👍 I'll document everything in Notion
+[28/01/2026, 17:00:00] Alice Developer: Heading out for the day! See you all tomorrow 👋
+[28/01/2026, 17:00:30] Bob Engineer: Same here! Great progress today team
+[28/01/2026, 17:01:00] Carol PM: Have a good evening everyone! 🌙

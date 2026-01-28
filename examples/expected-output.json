@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "participants": ["Alice Developer", "Bob Engineer", "Carol PM"],
+    "message_count": 42,
+    "media_count": 1,
+    "date_range": {
+      "start": "28/01/2026",
+      "end": "28/01/2026"
+    },
+    "duration_hours": 7.75
+  },
+  "summary": {
+    "executive_summary": "The team had a productive day completing a sprint planning cycle. Bob fixed an auth bug and updated documentation (PR #142 merged). The afternoon feature planning meeting resulted in key decisions: using FastAPI for a new microservice and Supabase with pgvector for the database, targeting end of February launch.",
+    "key_topics": [
+      {
+        "topic": "Auth Bug Fix",
+        "discussed_by": ["Alice Developer", "Bob Engineer"],
+        "outcome": "Fixed, PR #142 merged"
+      },
+      {
+        "topic": "New Feature Planning",
+        "discussed_by": ["Alice Developer", "Bob Engineer", "Carol PM"],
+        "outcome": "FastAPI + Supabase architecture decided"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "Use FastAPI for the new microservice",
+        "context": "Feature planning meeting"
+      },
+      {
+        "decision": "Use Supabase for database with vector search",
+        "context": "Vector search requirement"
+      },
+      {
+        "decision": "Target launch end of February",
+        "context": "Timeline planning"
+      }
+    ]
+  },
+  "action_items": [
+    {
+      "id": 1,
+      "type": "commitment",
+      "task": "Update README before PR",
+      "assignee": "Bob Engineer",
+      "deadline": "EOD",
+      "priority": "high",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "type": "commitment",
+      "task": "Auth bug fix",
+      "assignee": "Bob Engineer",
+      "deadline": "EOD",
+      "priority": "high",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "type": "request",
+      "task": "Review Bob's PR #142",
+      "assignee": "Alice Developer",
+      "deadline": "When ready",
+      "priority": "high",
+      "status": "completed"
+    },
+    {
+      "id": 4,
+      "type": "commitment",
+      "task": "FastAPI project setup",
+      "assignee": "Alice Developer",
+      "deadline": "Thursday",
+      "priority": "medium",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "type": "commitment",
+      "task": "Supabase research doc",
+      "assignee": "Bob Engineer",
+      "deadline": "Thursday",
+      "priority": "medium",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "type": "follow_up",
+      "task": "Sync on progress",
+      "assignee": "Team",
+      "deadline": "Friday",
+      "priority": "medium",
+      "status": "pending"
+    }
+  ],
+  "messages": [
+    {
+      "timestamp": "28/01/2026 09:15:32",
+      "sender": "Alice Developer",
+      "content": "Hey Bob! Ready for the sprint planning?",
+      "is_media": false
+    }
+  ],
+  "_note": "Full messages array truncated for brevity - see sample-whatsapp-chat.txt for full content"
+}
