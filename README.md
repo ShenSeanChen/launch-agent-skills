@@ -5,7 +5,7 @@
 
 📹 **YouTube Tutorial**: [Agent Skills Explained with Real Examples](#) _(link coming soon)_
 
-🚀 **X Post**: [Link](#)  
+🚀 **X Post**: [Link](https://x.com/ShenSeanChen/status/2017008645523865637)  
 💻 **Related Repos**: [launch-rag](https://github.com/ShenSeanChen/launch-rag) | [launch-agentic-rag](https://github.com/ShenSeanChen/launch-agentic-rag) | [launch-mcp-demo](https://github.com/ShenSeanChen/launch-mcp-demo)  
 ☕️ **Buy me a coffee**: [Cafe Latte](https://buy.stripe.com/5kA176bA895ggog4gh)  
 🤖 **Discord**: [Join our community](https://discord.com/invite/TKKPzZheua)
