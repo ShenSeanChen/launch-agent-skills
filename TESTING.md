@@ -33,7 +33,7 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 
 **Expected outcome**:
 - ✅ Claude reads [skills/whatsapp-parser/skill.md](skills/whatsapp-parser/skill.md)
-- ✅ Parses 74 messages from the B2B service conversation (agency → client)
+- ✅ Parses 74 messages from the B2B sales conversation (seller → buyer)
 - ✅ Returns structured JSON with:
   - `metadata`: participants, message_count, date_range
   - `messages`: array with timestamp, sender, content
@@ -43,18 +43,18 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ```json
 {
   "metadata": {
-    "participants": ["Lisa Wong - CloudScale Digital", "David Thompson - RetailTech Solutions"],
+    "participants": ["Marcus Chen - DataFlow Analytics", "Jennifer Wu - TechRetail"],
     "message_count": 74,
     "date_range": {
       "start": "27/01/2026, 09:15:00",
-      "end": "28/01/2026, 15:12:00"
+      "end": "28/01/2026, 15:42:30"
     }
   },
   "messages": [...],
   "statistics": {
     "messages_per_person": {
-      "Lisa Wong - CloudScale Digital": 37,
-      "David Thompson - RetailTech Solutions": 37
+      "Marcus Chen - DataFlow Analytics": 38,
+      "Jennifer Wu - TechRetail": 36
     }
   }
 }
@@ -83,30 +83,31 @@ Summarize the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ## Chat Summary: Jan 27-28, 2026
 
 ### TL;DR
-CloudScale Digital (marketing agency) discussing Q1 campaign with RetailTech Solutions client.
-Negotiated $45K quarterly budget ($36K ads + $9K videos) projecting 500-600 leads and
-$600K-720K in new revenue. CFO approved with payment term adjustments. Feb 3rd launch confirmed.
+B2B SaaS sales conversation between DataFlow Analytics sales rep and TechRetail VP of Sales.
+Discovery revealed forecast accuracy and scaling pain points (12→40 reps). Pitched $3,500/month
+analytics platform. Demo scheduled Thursday 2pm PST with Head of Sales Ops. 30-day trial aligned
+with Feb 20th board meeting. Deal value: $42K annually.
 
 ### Key Decisions
-- ✅ Q1 budget approved: $45K total ($12K/month ads + $9K video production)
-- ✅ Performance bonus structure: 500-600 leads = base, 600-700 = +10%, 700+ = +20%
-- ✅ Payment terms: 50% upfront, 50% end of quarter (vs monthly billing)
-- ✅ Campaign launch: Feb 3rd, case study videos launch Feb 15th
-- ✅ Backup customer confirmed (MegaMart) after Acme Retail reschedule
+- ✅ Demo scheduled: Thursday 2pm PST with Jennifer (VP Sales) and Raj (Head of Sales Ops)
+- ✅ 30-day trial (vs standard 14-day) to run through full month-end close cycle
+- ✅ Trial timing: Start Friday after demo → board presentation Feb 20th
+- ✅ Custom demo: Built with TechRetail's 3 product tiers and 40-rep structure
+- ✅ Budget confirmed: $3,500/month = $42K/year (within Jennifer's authority, no CFO needed)
 
 ### Topics Discussed
-1. **Q1 Campaign Planning** - 15 LinkedIn posts, 8 blogs, 3 case study videos
-2. **Budget Negotiation** - $8K → $12K/month (InMail, retargeting, A/B testing)
-3. **ROI Analysis** - $45K investment → 500-600 leads → 75-90 customers → $600K-720K revenue
-4. **Stakeholder Management** - CMO approval, CFO budget approval, payment terms
-5. **Project Logistics** - Customer filming schedules, backup plans, deliverable timelines
+1. **Discovery & Pain Points** - Forecast accuracy 20-30% off, Excel hell, scaling challenges
+2. **Solution Positioning** - Real-time analytics, AI forecasting, no-code setup
+3. **Pricing & ROI** - $3,500/month vs current $6K/month on tools that don't work
+4. **Technical Due Diligence** - Security (SOC 2, GDPR), Salesforce integration
+5. **Expansion Opportunity** - SDR tracking needs uncovered (15 new hires planned)
+6. **Buying Process** - Decision authority, trial requirements, board meeting timeline
 
 ### Action Items Found
-- Send testimonial scripts (completed same day)
-- Contact backup customers for filming (completed - MegaMart confirmed)
-- Send Q1 proposal with ROI projections (completed next morning)
-- Confirm payment terms with finance (pending)
-- Schedule MegaMart filming for next Tuesday (pending)
+- Prepare security docs and case studies for Thursday
+- Build custom demo with TechRetail's specific setup
+- Follow up after demo to kick off 30-day trial
+- Include SDR analytics in demo (additional discovery)
 ```
 
 ---
@@ -132,26 +133,27 @@ Extract all action items and TODOs from examples/sample-whatsapp-chat.txt
 ## Action Items Extracted
 
 ### High Priority 🔴
-- [x] **Send testimonial scripts** - @Lisa Wong - Due: EOD today
-  > Context: Customer case study filming scripts for client review
-  > Status: ✅ Completed same day (2:30pm)
-- [ ] **Send Q1 proposal** - @Lisa Wong - Due: Tomorrow 10am
-  > Context: Complete proposal with ROI projections for CFO approval
-  > Status: ✅ Completed next morning
+- [ ] **Prepare security docs** - @Marcus Chen - Due: Before Thursday demo
+  > Context: Jennifer mentioned Raj will ask about SOC 2, GDPR compliance
+  > Deal risk: High - technical due diligence required for buy-in
+- [ ] **Build custom demo** - @Marcus Chen - Due: Thursday 2pm PST
+  > Context: Using TechRetail's 3 product tiers and 40-rep structure
+  > Note: Marcus is proactively building this to increase close rate
+- [ ] **Send demo calendar invite** - @Marcus Chen - Due: ASAP
+  > Context: Thursday 2pm PST, include Jennifer + Raj (raj.patel@techretail.com)
 
 ### Medium Priority 🟡
-- [x] **Contact backup customers** - @Lisa Wong - Due: By Wednesday
-  > Context: Acme Retail rescheduled, need replacement for filming
-  > Status: ✅ Completed (MegaMart confirmed for next Tuesday)
-- [ ] **Schedule MegaMart filming** - @Lisa Wong - Due: Next Tuesday
-  > Context: Replacement filming session to stay on Feb 15 launch schedule
-- [ ] **Confirm payment terms** - @Lisa Wong - Due: By tomorrow
-  > Context: CFO wants 50% upfront + 50% end of quarter instead of monthly
-- [ ] **Review scripts** - @David Thompson - Due: By tomorrow
-  > Context: Review testimonial scripts with team before filming
+- [ ] **Follow up after demo** - @Marcus Chen - Due: Friday (day after demo)
+  > Context: Kick off 30-day trial if demo successful
+  > Timeline: Trial needs to run through month-end close + board meeting Feb 20th
+- [ ] **Include SDR analytics** - @Marcus Chen - Due: Thursday demo
+  > Context: Jennifer discovered additional need - 15 SDRs being hired
+  > Opportunity: Potential upsell or expanded use case
+- [ ] **Prepare case studies** - @Marcus Chen - Due: Before Thursday
+  > Context: Companies in TechRetail's space (SaaS, sales analytics)
 
 ### Summary
-Total: 6 items | Completed: 3 (50%) | High priority: 2 | All time-bound and assigned
+Total: 6 items | All assigned to Marcus | High priority: 3 | Deal value: $42K/year
 ```
 
 ---

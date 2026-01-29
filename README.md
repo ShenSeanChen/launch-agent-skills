@@ -177,28 +177,30 @@ Expected: Service account setup, API enablement, credentials configuration.
 
 ### Sample Data Explanation
 
-The `examples/sample-whatsapp-chat.txt` contains a **synthetic B2B service conversation** (no real data) between:
-- **Lisa Wong** - Account manager at CloudScale Digital (marketing agency)
-- **David Thompson** - Client at RetailTech Solutions (SaaS company)
+The `examples/sample-whatsapp-chat.txt` contains a **synthetic B2B sales conversation** (no real data) between:
+- **Marcus Chen** - Sales rep at DataFlow Analytics (SaaS analytics platform)
+- **Jennifer Wu** - Buyer at TechRetail (VP of Sales, potential customer)
 
 The conversation includes:
-- Q1 marketing campaign planning and budget discussion
-- Proposal negotiations ($45K quarterly investment → $600K-720K projected revenue)
-- Budget approval workflows (CFO sign-off, payment terms)
-- Multiple stakeholder coordination (CMO, CFO, internal teams)
-- Project management: filming schedules, content calendars, deliverables
-- Client relationship management: handling changes, backup plans, timeline pressures
-- Multiple action items with deadlines and accountability
-- Natural follow-ups and status updates over 2 days
+- **Prospecting** - LinkedIn connection, discovery of pain points
+- **Needs analysis** - Scaling from 12→40 reps, forecast accuracy problems
+- **Solution pitch** - Real-time analytics, AI forecasting ($3,500/month)
+- **Multi-threading** - Looping in Raj (Head of Sales Ops) for technical buy-in
+- **Demo scheduling** - Thursday 2pm PST with specific requirements
+- **Objection handling** - Security concerns (SOC 2, GDPR compliance)
+- **Trial close** - 30-day trial, board meeting alignment (Feb 20th)
+- **Expansion discovery** - Additional needs uncovered (SDR tracking)
+- Multiple action items: prepare security docs, custom demo, trial setup
 
 **Perfect for automanus.io use cases:**
-- Service businesses (agencies, consultancies, contractors)
-- Client communication tracking
-- Action item extraction from ongoing projects
-- Budget and timeline management
-- Multi-threaded conversation summarization
+- B2B sales teams managing deals over WhatsApp
+- Sales conversation tracking and action item extraction
+- Multi-stakeholder coordination and next steps
+- Discovery question analysis and pain point identification
+- Demo/meeting scheduling and follow-up tracking
+- Deal progression and timeline management
 
-This gives you realistic B2B service delivery patterns to test all skills without any privacy concerns!
+This gives you realistic B2B sales patterns to test all skills without any privacy concerns!
 
 ---
 
