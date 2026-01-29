@@ -3,7 +3,7 @@
 
 > **Learn Claude Skills: Teach AI to Follow Your Playbooks**
 
-📹 **YouTube Tutorial**: [Agent Skills Explained with Real Examples](#) _(link coming soon)_
+📹 **YouTube Tutorial**: [Agent Skills Explained with Real Examples](youtube.com/watch?v=oZs-qrSJTxs&list=PLE9hy4A7ZTmpGq7GHf5tgGFWh2277AeDR&index=36)
 
 🚀 **X Post**: [Link](https://x.com/ShenSeanChen/status/2017008645523865637)  
 💻 **Related Repos**: [launch-rag](https://github.com/ShenSeanChen/launch-rag) | [launch-agentic-rag](https://github.com/ShenSeanChen/launch-agentic-rag) | [launch-mcp-demo](https://github.com/ShenSeanChen/launch-mcp-demo)  
