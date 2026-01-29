@@ -101,7 +101,9 @@ launch-agent-skills/
 │   └── expected-output.json           # Reference output
 │
 ├── scripts/
-│   └── parse_whatsapp.py              # Standalone parser (skill resource)
+│   ├── export_to_google_docs.py       # Export analysis to Google Docs
+│   ├── requirements.txt               # Script dependencies
+│   └── README.md                      # Script setup and usage
 │
 └── docs/
     ├── skill-anatomy.md               # Deep dive on skill structure
@@ -201,6 +203,38 @@ The conversation includes:
 - Deal progression and timeline management
 
 This gives you realistic B2B sales patterns to test all skills without any privacy concerns!
+
+---
+
+## 🤖 AI + Automation: How It Works Together
+
+**Claude (AI Skills)** handles the smart stuff:
+- 🧠 Parsing WhatsApp chats with context understanding
+- 💡 Extracting action items intelligently (not just regex)
+- 📊 Summarizing with business insights
+- 🎯 Identifying decision makers and buying signals
+- 🔍 Detecting sentiment and deal risk
+
+**Scripts (Automation)** handle the integration:
+- 📄 Exporting to Google Docs, Notion, PDFs
+- 🔗 Syncing to CRMs (Salesforce, HubSpot)
+- 📅 Creating calendar reminders
+- 💬 Posting to Slack/Teams
+- 🔄 Batch processing and workflows
+
+**Example workflow:**
+```bash
+# 1. Ask Claude to analyze (AI does the thinking)
+"Analyze examples/sample-whatsapp-chat.txt and save as JSON"
+
+# 2. Export to Google Docs (automation distributes results)
+python scripts/export_to_google_docs.py examples/chat_analysis.json
+
+# 3. Share with team
+# Google Doc link → ready to collaborate!
+```
+
+See [scripts/README.md](scripts/README.md) for setup instructions.
 
 ---
 

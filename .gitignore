@@ -28,6 +28,10 @@ Thumbs.db
 .env.local
 *.local
 
+# Google API credentials (never commit these!)
+scripts/credentials.json
+scripts/token.json
+
 # Logs
 *.log
 logs/
