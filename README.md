@@ -112,10 +112,7 @@ launch-agent-skills/
 
 ## 🧪 Testing the Skills
 
-### Prerequisites
-
-- [Claude Code](https://claude.ai/code) installed (`npm install -g @anthropic-ai/claude-code`)
-- Or Claude Pro/Max subscription with Claude Code access
+**📋 See [TESTING.md](TESTING.md) for detailed step-by-step testing guide with exact prompts and expected outcomes.**
 
 ### Quick Start
 
@@ -130,7 +127,7 @@ claude .
 
 ### Sample Test Prompts
 
-Try these prompts in Claude Code to test the skills:
+Try these prompts in Claude Code:
 
 #### Part 1: WhatsApp Skills
 
