@@ -33,7 +33,7 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 
 **Expected outcome**:
 - ✅ Claude reads [skills/whatsapp-parser/skill.md](skills/whatsapp-parser/skill.md)
-- ✅ Parses 46 messages from the sample chat
+- ✅ Parses 57 messages from the B2B sales conversation
 - ✅ Returns structured JSON with:
   - `metadata`: participants, message_count, date_range
   - `messages`: array with timestamp, sender, content
@@ -43,15 +43,20 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ```json
 {
   "metadata": {
-    "participants": ["Alice Developer", "Bob Engineer", "Carol PM"],
-    "message_count": 46,
+    "participants": ["Sarah Martinez - Automanus", "Michael Chen - TechCorp"],
+    "message_count": 57,
     "date_range": {
-      "start": "28/01/2026, 09:15:30",
-      "end": "28/01/2026, 16:45:12"
+      "start": "27/01/2026, 14:23:15",
+      "end": "27/01/2026, 16:31:30"
     }
   },
   "messages": [...],
-  "statistics": {...}
+  "statistics": {
+    "messages_per_person": {
+      "Sarah Martinez - Automanus": 28,
+      "Michael Chen - TechCorp": 29
+    }
+  }
 }
 ```
 
@@ -75,21 +80,31 @@ Summarize the WhatsApp chat in examples/sample-whatsapp-chat.txt
 
 **What you'll see**:
 ```markdown
-## Chat Summary: Jan 28, 2026
+## Chat Summary: Jan 27, 2026
 
 ### TL;DR
-Team discussed auth bug fix (PR #142), planned new microservice using FastAPI + Supabase,
-and scheduled feature planning meeting for next week.
+B2B sales conversation between Automanus sales rep and TechCorp buyer.
+Discussed pricing ($850/month for 15 seats), scheduled technical deep dive
+for Thursday 3pm PST, and planned 14-day POC starting Feb 3rd.
 
 ### Key Decisions
-- ✅ Use FastAPI for new microservice backend
-- ✅ Deploy Supabase for vector database (pgvector)
-- ✅ Schedule deep dive meeting for Thursday 2pm
+- ✅ Thursday 3pm PST technical call with VP of Sales and Head of Ops
+- ✅ 14-day POC to test lead follow-up and meeting scheduling workflows
+- ✅ Professional plan at $850/month (vs current $1200/month on Zapier/Make)
+- ✅ Target POC start: Feb 3rd
 
 ### Topics Discussed
-1. **Bug Fix & PR Review** - Auth issue fixed in PR #142
-2. **Architecture Planning** - New microservice stack decision
-3. **Sprint Planning** - Feature prioritization for next sprint
+1. **Product Demo Follow-up** - Post-demo qualification and discovery
+2. **Pricing & ROI** - $850/month vs $1200/month current spend
+3. **Stakeholder Coordination** - Looping in Jennifer (VP Sales) and David (Head Ops)
+4. **Compliance** - HIPAA, SOC 2 Type II requirements
+5. **POC Planning** - 2 workflow test, Feb 3rd start date
+
+### Action Items Found
+- Send case studies (SaaS B2B focus)
+- Calendar invite for Thursday 3pm PST
+- Prepare HIPAA compliance documentation
+- Create POC proposal
 ```
 
 ---
@@ -115,17 +130,21 @@ Extract all action items and TODOs from examples/sample-whatsapp-chat.txt
 ## Action Items Extracted
 
 ### High Priority 🔴
-- [ ] **Review Bob's PR #142** - @Alice Developer - Due: EOD today
-  > Context: Auth bug fix ready for review
+- [ ] **Send case studies** - @Sarah Martinez - Due: Within 1 hour
+  > Context: SaaS B2B focused case studies for TechCorp
+- [ ] **Send calendar invite** - @Sarah Martinez - Due: ASAP
+  > Context: Thursday 3pm PST with Michael, Jennifer, David + Tom
 
 ### Medium Priority 🟡
-- [ ] **Update README** - @Bob Engineer - Due: Before merge
-  > Context: Documentation needs updating
-- [ ] **Schedule feature planning** - @Carol PM - Due: This week
-  > Context: Deep dive on Thursday 2pm
+- [ ] **Prepare HIPAA compliance docs** - @Sarah Martinez - Due: Before Thursday
+  > Context: TechCorp handles healthcare clients
+- [ ] **Create POC proposal** - @Sarah Martinez - Due: Before Thursday
+  > Context: 14-day POC for lead follow-up + meeting scheduling
+- [ ] **Prep stakeholders for call** - @Michael Chen - Due: Before Thursday
+  > Context: Brief Jennifer and David on Automanus capabilities
 
 ### Summary
-Total: 7 items | Completed: 4 (58%) | High priority: 2
+Total: 5 items | High priority: 2 | All assigned and time-bound
 ```
 
 ---

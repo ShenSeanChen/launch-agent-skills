@@ -177,20 +177,21 @@ Expected: Service account setup, API enablement, credentials configuration.
 
 ### Sample Data Explanation
 
-The `examples/sample-whatsapp-chat.txt` contains a **synthetic conversation** (no real data) between:
-- **Alice Developer** - Frontend engineer
-- **Bob Engineer** - Backend engineer  
-- **Carol PM** - Project manager
+The `examples/sample-whatsapp-chat.txt` contains a **synthetic B2B sales conversation** (no real data) between:
+- **Sarah Martinez** - Sales rep at Automanus (AI automation platform)
+- **Michael Chen** - Buyer at TechCorp (SaaS company)
 
 The conversation includes:
-- Sprint planning discussion
-- Bug fix and PR workflow (PR #142)
-- Feature planning meeting
-- Decisions: FastAPI + Supabase for new microservice
-- Multiple TODOs and action items
-- Emojis, media placeholders, and multi-message threads
+- Post-demo follow-up discussion
+- Discovery questions (team size, pain points, current tools)
+- Pricing and timeline negotiation
+- Multi-stakeholder coordination (looping in VP of Sales, Head of Ops)
+- Meeting scheduling and POC planning
+- Compliance questions (HIPAA, SOC 2)
+- Multiple action items and TODOs
+- Case study sharing and follow-ups
 
-This gives you realistic patterns to test all skills without any privacy concerns.
+This gives you realistic B2B sales patterns to test all skills without any privacy concerns - perfect for demonstrating automanus.io use cases!
 
 ---
 

@@ -1,46 +1,56 @@
-[28/01/2026, 09:15:32] Alice Developer: Hey Bob! Ready for the sprint planning?
-[28/01/2026, 09:16:01] Bob Engineer: Almost! Just finishing up the auth bug fix 🐛
-[28/01/2026, 09:16:45] Alice Developer: Nice! Can you also update the README with the new API endpoints?
-[28/01/2026, 09:17:02] Bob Engineer: TODO: Update README before PR
-[28/01/2026, 09:17:15] Bob Engineer: Will do! Should be quick
-[28/01/2026, 09:18:30] Alice Developer: <Media omitted>
-[28/01/2026, 09:18:45] Alice Developer: Here's the screenshot of the error I mentioned yesterday
-[28/01/2026, 09:19:12] Bob Engineer: Ah I see the issue! The token wasn't being refreshed properly
-[28/01/2026, 09:20:00] Bob Engineer: I'll fix that too. Should have both done by EOD
-[28/01/2026, 09:21:33] Alice Developer: Perfect! Let's discuss the new feature after standup
-[28/01/2026, 09:22:00] Carol PM: Good morning team! 👋 Standup in 10 minutes
-[28/01/2026, 09:22:15] Alice Developer: Morning Carol!
-[28/01/2026, 09:22:30] Bob Engineer: 👍
-[28/01/2026, 10:45:00] Carol PM: Great standup everyone! Action items:
-[28/01/2026, 10:45:15] Carol PM: 1. Bob: Auth fix + README update by EOD
-[28/01/2026, 10:45:30] Carol PM: 2. Alice: Review Bob's PR when ready
-[28/01/2026, 10:45:45] Carol PM: 3. Team: Feature planning meeting at 2pm
-[28/01/2026, 10:46:00] Alice Developer: Got it! I'll block off 2pm
-[28/01/2026, 10:46:30] Bob Engineer: Sounds good. I'll have the PR up by lunch
-[28/01/2026, 12:30:00] Bob Engineer: PR #142 is up! 🚀
-[28/01/2026, 12:30:15] Bob Engineer: https://github.com/team/project/pull/142
-[28/01/2026, 12:31:00] Alice Developer: Already reviewing! Looking good so far
-[28/01/2026, 12:45:22] Alice Developer: Left a few comments. Minor stuff - just some type hints missing
-[28/01/2026, 12:46:00] Bob Engineer: On it! Give me 5 minutes
-[28/01/2026, 12:52:00] Bob Engineer: Updated! Ready for re-review
-[28/01/2026, 13:00:00] Alice Developer: ✅ Approved! Great work Bob
-[28/01/2026, 13:00:30] Bob Engineer: Thanks! Merging now 🎉
-[28/01/2026, 13:01:00] Carol PM: Awesome teamwork! 
-[28/01/2026, 14:00:00] Carol PM: Reminder: Feature planning meeting starting now
-[28/01/2026, 14:00:15] Carol PM: Zoom link: https://zoom.us/j/123456789
-[28/01/2026, 14:01:00] Alice Developer: Joining!
-[28/01/2026, 14:01:15] Bob Engineer: Same here
-[28/01/2026, 15:30:00] Carol PM: Great meeting! Decisions made:
-[28/01/2026, 15:30:30] Carol PM: - We'll use FastAPI for the new microservice
-[28/01/2026, 15:30:45] Carol PM: - Supabase for the database (vector search needed)
-[28/01/2026, 15:31:00] Carol PM: - Target launch: end of February
-[28/01/2026, 15:31:30] Alice Developer: I can start on the FastAPI skeleton tomorrow
-[28/01/2026, 15:32:00] Bob Engineer: I'll research the Supabase pgvector setup
-[28/01/2026, 15:32:30] Carol PM: Perfect! Let's sync on Friday to review progress
-[28/01/2026, 15:33:00] Carol PM: Action item: Alice - FastAPI project setup by Thursday
-[28/01/2026, 15:33:15] Carol PM: Action item: Bob - Supabase research doc by Thursday
-[28/01/2026, 15:33:30] Alice Developer: Got it! Will share the repo link when ready
-[28/01/2026, 15:34:00] Bob Engineer: 👍 I'll document everything in Notion
-[28/01/2026, 17:00:00] Alice Developer: Heading out for the day! See you all tomorrow 👋
-[28/01/2026, 17:00:30] Bob Engineer: Same here! Great progress today team
-[28/01/2026, 17:01:00] Carol PM: Have a good evening everyone! 🌙
+[27/01/2026, 14:23:15] Sarah Martinez - Automanus: Hi Michael! Thanks for taking the time to chat today. Really enjoyed our demo call earlier 😊
+[27/01/2026, 14:24:30] Michael Chen - TechCorp: Absolutely! The automation capabilities you showed are exactly what we need. Our sales team is drowning in manual follow-ups
+[27/01/2026, 14:25:00] Sarah Martinez - Automanus: I hear that a lot! How many leads are you managing per month right now?
+[27/01/2026, 14:25:45] Michael Chen - TechCorp: Around 3000-3500. We have 15 SDRs and they're spending 60% of their time on admin work instead of selling
+[27/01/2026, 14:26:30] Sarah Martinez - Automanus: That's a huge opportunity! With Automanus, we typically see teams cut admin time by 70-80%
+[27/01/2026, 14:27:00] Michael Chen - TechCorp: That would be game-changing for us. What's the implementation timeline?
+[27/01/2026, 14:27:45] Sarah Martinez - Automanus: Typically 2-3 weeks from contract to go-live. Week 1 is integration with your CRM, Week 2 is workflow setup, Week 3 is training
+[27/01/2026, 14:28:30] Michael Chen - TechCorp: We use Salesforce. You mentioned HubSpot during the demo - do you support Salesforce too?
+[27/01/2026, 14:29:00] Sarah Martinez - Automanus: Yes! Salesforce is actually our most popular integration. We have pre-built templates for it
+[27/01/2026, 14:29:45] Michael Chen - TechCorp: Perfect. I need to loop in our VP of Sales, Jennifer Wu. Can you send over some case studies?
+[27/01/2026, 14:30:15] Sarah Martinez - Automanus: Absolutely! I'll email you 3 case studies in your industry (SaaS B2B) within the next hour
+[27/01/2026, 14:30:45] Sarah Martinez - Automanus: TODO: Send Michael case studies - SaaS B2B focus
+[27/01/2026, 14:31:00] Michael Chen - TechCorp: Appreciate that! What's the pricing looking like for our team size?
+[27/01/2026, 14:32:00] Sarah Martinez - Automanus: For 15 seats with Salesforce integration, we're looking at $850/month on our Professional plan. That includes unlimited automations and priority support
+[27/01/2026, 14:33:15] Michael Chen - TechCorp: That's actually cheaper than I expected! We're currently spending about $1200/month on Zapier + Make.com for half the functionality
+[27/01/2026, 14:34:00] Sarah Martinez - Automanus: Yeah, our unified platform approach tends to be more cost-effective. Plus you get AI-powered lead scoring built in
+[27/01/2026, 14:35:00] Michael Chen - TechCorp: The lead scoring feature is what really caught Jennifer's attention when I briefed her this morning
+[27/01/2026, 14:35:45] Sarah Martinez - Automanus: That's great! Would Jennifer be available for a technical deep dive this week?
+[27/01/2026, 14:36:30] Michael Chen - TechCorp: Let me check with her. She's usually free Thursday afternoons
+[27/01/2026, 14:37:00] Sarah Martinez - Automanus: Thursday 3pm PST works for me. Does that work for you both?
+[27/01/2026, 14:37:45] Michael Chen - TechCorp: Checking her calendar now... Yes! Thursday 3pm PST is perfect
+[27/01/2026, 14:38:15] Sarah Martinez - Automanus: Excellent! I'll send a calendar invite with the Zoom link. Will this be just you and Jennifer, or should I include anyone else?
+[27/01/2026, 14:39:00] Michael Chen - TechCorp: Let's also include David Park, our Head of Sales Operations. He'll want to understand the CRM integration details
+[27/01/2026, 14:39:45] Sarah Martinez - Automanus: Perfect! I'll bring our Solutions Engineer, Tom, to cover the technical aspects. What's David's email?
+[27/01/2026, 14:40:15] Michael Chen - TechCorp: david.park@techcorp.com
+[27/01/2026, 14:40:30] Sarah Martinez - Automanus: Got it! Action item: Send calendar invite to Michael, Jennifer, and David for Thursday 3pm PST
+[27/01/2026, 14:41:00] Michael Chen - TechCorp: Great! One more question - do you have a trial period or POC option?
+[27/01/2026, 14:42:00] Sarah Martinez - Automanus: Yes, we offer a 14-day proof-of-concept where we set up 2-3 of your most critical workflows. No commitment required
+[27/01/2026, 14:42:45] Michael Chen - TechCorp: That's exactly what I wanted to hear. We'd want to test the lead follow-up automation and the meeting scheduling workflow
+[27/01/2026, 14:43:30] Sarah Martinez - Automanus: Both are perfect POC candidates! Those typically show ROI within the first week
+[27/01/2026, 14:44:00] Michael Chen - TechCorp: Can we kick off the POC next Monday? Assuming Thursday's call goes well
+[27/01/2026, 14:44:45] Sarah Martinez - Automanus: Absolutely! I'll prepare a POC proposal and bring it to Thursday's meeting. We can start as early as Feb 3rd
+[27/01/2026, 14:45:15] Michael Chen - TechCorp: Sounds like a plan! Really excited about this
+[27/01/2026, 14:45:45] Sarah Martinez - Automanus: Me too! Quick recap of what I'm sending you:
+[27/01/2026, 14:46:00] Sarah Martinez - Automanus: 1. Case studies (within 1 hour)
+[27/01/2026, 14:46:15] Sarah Martinez - Automanus: 2. Calendar invite for Thursday 3pm PST with Tom
+[27/01/2026, 14:46:30] Sarah Martinez - Automanus: 3. POC proposal to review on Thursday
+[27/01/2026, 14:46:45] Michael Chen - TechCorp: Perfect! I'll prep Jennifer and David before the call
+[27/01/2026, 14:47:00] Sarah Martinez - Automanus: Awesome! Any questions I should be ready to answer on Thursday?
+[27/01/2026, 14:48:00] Michael Chen - TechCorp: Jennifer will definitely ask about data security and compliance. We handle healthcare clients so HIPAA is important
+[27/01/2026, 14:48:45] Sarah Martinez - Automanus: Great heads up! We're SOC 2 Type II certified and HIPAA compliant. I'll have Tom prepare those docs
+[27/01/2026, 14:49:15] Sarah Martinez - Automanus: TODO: Prepare HIPAA compliance docs for Thursday call
+[27/01/2026, 14:49:30] Michael Chen - TechCorp: That's reassuring! David will probably want to know about API rate limits and uptime SLA
+[27/01/2026, 14:50:15] Sarah Martinez - Automanus: We guarantee 99.9% uptime and our rate limits are generous - 10,000 API calls/hour on Pro plan. I'll include that in the proposal
+[27/01/2026, 14:51:00] Michael Chen - TechCorp: Excellent! I think we have everything we need for now
+[27/01/2026, 14:51:30] Sarah Martinez - Automanus: Perfect! Looking forward to Thursday. Have a great rest of your day! 🚀
+[27/01/2026, 14:52:00] Michael Chen - TechCorp: You too! Thanks Sarah
+[27/01/2026, 15:15:00] Sarah Martinez - Automanus: Just sent the case studies! Check your inbox 📧
+[27/01/2026, 15:16:30] Michael Chen - TechCorp: Got them! These are great. The Cloudify case study is very similar to our situation
+[27/01/2026, 15:17:00] Sarah Martinez - Automanus: They had the same challenge! They went from 2000 leads/month to 5000 without adding headcount
+[27/01/2026, 15:18:00] Michael Chen - TechCorp: That's the dream! Forwarding this to Jennifer now
+[27/01/2026, 15:18:30] Sarah Martinez - Automanus: Awesome! Let me know if she has any questions before Thursday
+[27/01/2026, 15:19:00] Michael Chen - TechCorp: Will do! Thanks again
+[27/01/2026, 16:30:00] Michael Chen - TechCorp: Quick update - Jennifer read the case studies and is very impressed. Thursday call is confirmed ✅
+[27/01/2026, 16:31:00] Sarah Martinez - Automanus: That's fantastic news! I just sent the calendar invite. See you Thursday at 3pm!
+[27/01/2026, 16:31:30] Michael Chen - TechCorp: See you then! 👍
