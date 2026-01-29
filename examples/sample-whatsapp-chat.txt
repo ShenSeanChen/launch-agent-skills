@@ -1,56 +1,73 @@
-[27/01/2026, 14:23:15] Sarah Martinez - Automanus: Hi Michael! Thanks for taking the time to chat today. Really enjoyed our demo call earlier 😊
-[27/01/2026, 14:24:30] Michael Chen - TechCorp: Absolutely! The automation capabilities you showed are exactly what we need. Our sales team is drowning in manual follow-ups
-[27/01/2026, 14:25:00] Sarah Martinez - Automanus: I hear that a lot! How many leads are you managing per month right now?
-[27/01/2026, 14:25:45] Michael Chen - TechCorp: Around 3000-3500. We have 15 SDRs and they're spending 60% of their time on admin work instead of selling
-[27/01/2026, 14:26:30] Sarah Martinez - Automanus: That's a huge opportunity! With Automanus, we typically see teams cut admin time by 70-80%
-[27/01/2026, 14:27:00] Michael Chen - TechCorp: That would be game-changing for us. What's the implementation timeline?
-[27/01/2026, 14:27:45] Sarah Martinez - Automanus: Typically 2-3 weeks from contract to go-live. Week 1 is integration with your CRM, Week 2 is workflow setup, Week 3 is training
-[27/01/2026, 14:28:30] Michael Chen - TechCorp: We use Salesforce. You mentioned HubSpot during the demo - do you support Salesforce too?
-[27/01/2026, 14:29:00] Sarah Martinez - Automanus: Yes! Salesforce is actually our most popular integration. We have pre-built templates for it
-[27/01/2026, 14:29:45] Michael Chen - TechCorp: Perfect. I need to loop in our VP of Sales, Jennifer Wu. Can you send over some case studies?
-[27/01/2026, 14:30:15] Sarah Martinez - Automanus: Absolutely! I'll email you 3 case studies in your industry (SaaS B2B) within the next hour
-[27/01/2026, 14:30:45] Sarah Martinez - Automanus: TODO: Send Michael case studies - SaaS B2B focus
-[27/01/2026, 14:31:00] Michael Chen - TechCorp: Appreciate that! What's the pricing looking like for our team size?
-[27/01/2026, 14:32:00] Sarah Martinez - Automanus: For 15 seats with Salesforce integration, we're looking at $850/month on our Professional plan. That includes unlimited automations and priority support
-[27/01/2026, 14:33:15] Michael Chen - TechCorp: That's actually cheaper than I expected! We're currently spending about $1200/month on Zapier + Make.com for half the functionality
-[27/01/2026, 14:34:00] Sarah Martinez - Automanus: Yeah, our unified platform approach tends to be more cost-effective. Plus you get AI-powered lead scoring built in
-[27/01/2026, 14:35:00] Michael Chen - TechCorp: The lead scoring feature is what really caught Jennifer's attention when I briefed her this morning
-[27/01/2026, 14:35:45] Sarah Martinez - Automanus: That's great! Would Jennifer be available for a technical deep dive this week?
-[27/01/2026, 14:36:30] Michael Chen - TechCorp: Let me check with her. She's usually free Thursday afternoons
-[27/01/2026, 14:37:00] Sarah Martinez - Automanus: Thursday 3pm PST works for me. Does that work for you both?
-[27/01/2026, 14:37:45] Michael Chen - TechCorp: Checking her calendar now... Yes! Thursday 3pm PST is perfect
-[27/01/2026, 14:38:15] Sarah Martinez - Automanus: Excellent! I'll send a calendar invite with the Zoom link. Will this be just you and Jennifer, or should I include anyone else?
-[27/01/2026, 14:39:00] Michael Chen - TechCorp: Let's also include David Park, our Head of Sales Operations. He'll want to understand the CRM integration details
-[27/01/2026, 14:39:45] Sarah Martinez - Automanus: Perfect! I'll bring our Solutions Engineer, Tom, to cover the technical aspects. What's David's email?
-[27/01/2026, 14:40:15] Michael Chen - TechCorp: david.park@techcorp.com
-[27/01/2026, 14:40:30] Sarah Martinez - Automanus: Got it! Action item: Send calendar invite to Michael, Jennifer, and David for Thursday 3pm PST
-[27/01/2026, 14:41:00] Michael Chen - TechCorp: Great! One more question - do you have a trial period or POC option?
-[27/01/2026, 14:42:00] Sarah Martinez - Automanus: Yes, we offer a 14-day proof-of-concept where we set up 2-3 of your most critical workflows. No commitment required
-[27/01/2026, 14:42:45] Michael Chen - TechCorp: That's exactly what I wanted to hear. We'd want to test the lead follow-up automation and the meeting scheduling workflow
-[27/01/2026, 14:43:30] Sarah Martinez - Automanus: Both are perfect POC candidates! Those typically show ROI within the first week
-[27/01/2026, 14:44:00] Michael Chen - TechCorp: Can we kick off the POC next Monday? Assuming Thursday's call goes well
-[27/01/2026, 14:44:45] Sarah Martinez - Automanus: Absolutely! I'll prepare a POC proposal and bring it to Thursday's meeting. We can start as early as Feb 3rd
-[27/01/2026, 14:45:15] Michael Chen - TechCorp: Sounds like a plan! Really excited about this
-[27/01/2026, 14:45:45] Sarah Martinez - Automanus: Me too! Quick recap of what I'm sending you:
-[27/01/2026, 14:46:00] Sarah Martinez - Automanus: 1. Case studies (within 1 hour)
-[27/01/2026, 14:46:15] Sarah Martinez - Automanus: 2. Calendar invite for Thursday 3pm PST with Tom
-[27/01/2026, 14:46:30] Sarah Martinez - Automanus: 3. POC proposal to review on Thursday
-[27/01/2026, 14:46:45] Michael Chen - TechCorp: Perfect! I'll prep Jennifer and David before the call
-[27/01/2026, 14:47:00] Sarah Martinez - Automanus: Awesome! Any questions I should be ready to answer on Thursday?
-[27/01/2026, 14:48:00] Michael Chen - TechCorp: Jennifer will definitely ask about data security and compliance. We handle healthcare clients so HIPAA is important
-[27/01/2026, 14:48:45] Sarah Martinez - Automanus: Great heads up! We're SOC 2 Type II certified and HIPAA compliant. I'll have Tom prepare those docs
-[27/01/2026, 14:49:15] Sarah Martinez - Automanus: TODO: Prepare HIPAA compliance docs for Thursday call
-[27/01/2026, 14:49:30] Michael Chen - TechCorp: That's reassuring! David will probably want to know about API rate limits and uptime SLA
-[27/01/2026, 14:50:15] Sarah Martinez - Automanus: We guarantee 99.9% uptime and our rate limits are generous - 10,000 API calls/hour on Pro plan. I'll include that in the proposal
-[27/01/2026, 14:51:00] Michael Chen - TechCorp: Excellent! I think we have everything we need for now
-[27/01/2026, 14:51:30] Sarah Martinez - Automanus: Perfect! Looking forward to Thursday. Have a great rest of your day! 🚀
-[27/01/2026, 14:52:00] Michael Chen - TechCorp: You too! Thanks Sarah
-[27/01/2026, 15:15:00] Sarah Martinez - Automanus: Just sent the case studies! Check your inbox 📧
-[27/01/2026, 15:16:30] Michael Chen - TechCorp: Got them! These are great. The Cloudify case study is very similar to our situation
-[27/01/2026, 15:17:00] Sarah Martinez - Automanus: They had the same challenge! They went from 2000 leads/month to 5000 without adding headcount
-[27/01/2026, 15:18:00] Michael Chen - TechCorp: That's the dream! Forwarding this to Jennifer now
-[27/01/2026, 15:18:30] Sarah Martinez - Automanus: Awesome! Let me know if she has any questions before Thursday
-[27/01/2026, 15:19:00] Michael Chen - TechCorp: Will do! Thanks again
-[27/01/2026, 16:30:00] Michael Chen - TechCorp: Quick update - Jennifer read the case studies and is very impressed. Thursday call is confirmed ✅
-[27/01/2026, 16:31:00] Sarah Martinez - Automanus: That's fantastic news! I just sent the calendar invite. See you Thursday at 3pm!
-[27/01/2026, 16:31:30] Michael Chen - TechCorp: See you then! 👍
+[27/01/2026, 09:15:00] Lisa Wong - CloudScale Digital: Good morning David! Hope you had a great weekend 😊
+[27/01/2026, 09:17:30] David Thompson - RetailTech Solutions: Morning Lisa! Great weekend, thanks. Ready to kick off the Q1 marketing campaign?
+[27/01/2026, 09:18:15] Lisa Wong - CloudScale Digital: Absolutely! I've finished the content calendar and ad creatives. Want me to send them over?
+[27/01/2026, 09:19:00] David Thompson - RetailTech Solutions: Yes please! Our CMO wants to review everything before we launch
+[27/01/2026, 09:20:00] Lisa Wong - CloudScale Digital: <Media omitted>
+[27/01/2026, 09:20:15] Lisa Wong - CloudScale Digital: Just sent the PDF to your email. 15 LinkedIn posts, 8 blog articles, and 3 case study videos planned for Q1
+[27/01/2026, 09:22:00] David Thompson - RetailTech Solutions: This looks fantastic! The case study videos are exactly what we need. When can we start filming?
+[27/01/2026, 09:23:30] Lisa Wong - CloudScale Digital: I've already reached out to 3 of your customers who agreed to participate. We can start filming next week if you approve the script
+[27/01/2026, 09:24:45] David Thompson - RetailTech Solutions: Perfect! Can you send me the customer list and script outlines?
+[27/01/2026, 09:25:30] Lisa Wong - CloudScale Digital: TODO: Send customer testimonial script outlines by EOD today
+[27/01/2026, 09:26:00] Lisa Wong - CloudScale Digital: Will do! Also, I wanted to discuss the budget for the LinkedIn ad campaign
+[27/01/2026, 09:27:15] David Thompson - RetailTech Solutions: Sure, what are you thinking?
+[27/01/2026, 09:28:00] Lisa Wong - CloudScale Digital: Based on your goal of 500 qualified leads this quarter, I'm recommending $12K/month for 3 months. That gives us enough budget to test multiple audiences
+[27/01/2026, 09:29:45] David Thompson - RetailTech Solutions: That's higher than the $8K we discussed last month. Can you break down where the extra budget goes?
+[27/01/2026, 09:31:00] Lisa Wong - CloudScale Digital: Of course! The $8K was for display ads only. The extra $4K covers:
+[27/01/2026, 09:31:30] Lisa Wong - CloudScale Digital: - LinkedIn InMail campaigns ($2K)
+[27/01/2026, 09:31:45] Lisa Wong - CloudScale Digital: - Retargeting campaigns ($1.5K)
+[27/01/2026, 09:32:00] Lisa Wong - CloudScale Digital: - A/B testing budget ($500)
+[27/01/2026, 09:33:00] David Thompson - RetailTech Solutions: Makes sense. Let me run this by our CFO. Can you send a formal proposal with projected ROI?
+[27/01/2026, 09:34:00] Lisa Wong - CloudScale Digital: Absolutely! I'll have that ready by tomorrow morning. Should I include the case study production costs separately?
+[27/01/2026, 09:35:15] David Thompson - RetailTech Solutions: Yes, keep those separate. What are we looking at for video production?
+[27/01/2026, 09:36:30] Lisa Wong - CloudScale Digital: $3K per video, so $9K total for 3 case studies. That includes filming, editing, motion graphics, and distribution
+[27/01/2026, 09:37:45] David Thompson - RetailTech Solutions: Got it. Total investment would be $45K for the quarter then ($36K ads + $9K videos)
+[27/01/2026, 09:38:30] Lisa Wong - CloudScale Digital: Correct! And based on your current conversion rates, we're projecting 500-600 qualified leads, which is about $75-90 per lead
+[27/01/2026, 09:40:00] David Thompson - RetailTech Solutions: That's solid. Our sales team closes about 15% of qualified leads, so we're looking at 75-90 new customers
+[27/01/2026, 09:41:15] Lisa Wong - CloudScale Digital: Exactly! With your ACV of $8K, that's $600K-720K in new revenue from a $45K investment
+[27/01/2026, 09:42:30] David Thompson - RetailTech Solutions: The math definitely works. I'll present this to the CFO in our budget meeting Wednesday
+[27/01/2026, 09:43:00] Lisa Wong - CloudScale Digital: Perfect! When should I expect to hear back?
+[27/01/2026, 09:44:00] David Thompson - RetailTech Solutions: Budget decisions usually take 3-5 days. Let's say by Friday EOD at the latest
+[27/01/2026, 09:45:00] Lisa Wong - CloudScale Digital: Sounds good! I'll hold the Feb 3rd campaign launch date tentatively. If approved Friday, we're still on track
+[27/01/2026, 09:46:15] David Thompson - RetailTech Solutions: Actually, one more thing - can we add a performance bonus structure? Like if you exceed the 500 lead target?
+[27/01/2026, 09:47:30] Lisa Wong - CloudScale Digital: I love that idea! We can do a tiered structure: 500-600 leads = base fee, 600-700 = +10% bonus, 700+ = +20% bonus
+[27/01/2026, 09:48:45] David Thompson - RetailTech Solutions: That's fair! It aligns our incentives. Include that in the proposal
+[27/01/2026, 09:49:30] Lisa Wong - CloudScale Digital: Will do! So the updated proposal will include:
+[27/01/2026, 09:49:45] Lisa Wong - CloudScale Digital: 1. Q1 content calendar (LinkedIn, blog, videos)
+[27/01/2026, 09:50:00] Lisa Wong - CloudScale Digital: 2. Ad campaign budget breakdown ($12K/month)
+[27/01/2026, 09:50:15] Lisa Wong - CloudScale Digital: 3. Case study production costs ($9K total)
+[27/01/2026, 09:50:30] Lisa Wong - CloudScale Digital: 4. ROI projections (500-600 leads → $600K-720K revenue)
+[27/01/2026, 09:50:45] Lisa Wong - CloudScale Digital: 5. Performance bonus structure
+[27/01/2026, 09:51:15] David Thompson - RetailTech Solutions: Perfect! That covers everything we need for the budget approval
+[27/01/2026, 09:52:00] Lisa Wong - CloudScale Digital: Action item: Send complete Q1 proposal with ROI projections by tomorrow 10am
+[27/01/2026, 09:52:30] David Thompson - RetailTech Solutions: Thanks Lisa! Really appreciate your thorough approach
+[27/01/2026, 09:53:00] Lisa Wong - CloudScale Digital: Of course! That's what we're here for 🚀
+[27/01/2026, 14:30:00] Lisa Wong - CloudScale Digital: Quick update - just sent the customer testimonial scripts to your email!
+[27/01/2026, 14:32:15] David Thompson - RetailTech Solutions: Got it! These look great. I'll review with the team and get back to you by tomorrow
+[27/01/2026, 14:33:00] Lisa Wong - CloudScale Digital: Sounds good! Let me know if you want any changes
+[27/01/2026, 16:45:00] David Thompson - RetailTech Solutions: Hey Lisa, one of the customers (Acme Retail) wants to push their filming to next month. Family emergency
+[27/01/2026, 16:46:30] Lisa Wong - CloudScale Digital: Oh no! Hope everything is okay. No problem at all - we can reschedule
+[27/01/2026, 16:47:15] David Thompson - RetailTech Solutions: Thanks for understanding. Do we have a backup customer we can film instead?
+[27/01/2026, 16:48:30] Lisa Wong - CloudScale Digital: Yes! I have 2 other customers who were interested but didn't make the first cut. Let me reach out to them
+[27/01/2026, 16:49:00] Lisa Wong - CloudScale Digital: Action item: Contact backup customers for case study filming availability
+[27/01/2026, 16:50:00] David Thompson - RetailTech Solutions: Great! Keep me posted. We really want to hit that Feb 15 launch date for the videos
+[27/01/2026, 16:51:00] Lisa Wong - CloudScale Digital: Absolutely! I'll confirm the backup customer by Wednesday and we'll stay on schedule
+[27/01/2026, 16:52:00] David Thompson - RetailTech Solutions: You're the best! Talk soon
+[28/01/2026, 10:15:00] Lisa Wong - CloudScale Digital: Good morning David! The proposal is ready and in your inbox 📧
+[28/01/2026, 10:17:30] David Thompson - RetailTech Solutions: Just saw it! This is exactly what I needed. Forwarding to CFO now
+[28/01/2026, 10:18:45] Lisa Wong - CloudScale Digital: Excellent! Also confirmed with MegaMart - they can film next Tuesday as replacement for Acme
+[28/01/2026, 10:20:00] David Thompson - RetailTech Solutions: Perfect timing! That keeps us on track for Feb 15 launch
+[28/01/2026, 10:21:00] Lisa Wong - CloudScale Digital: Action item: Schedule MegaMart filming for next Tuesday
+[28/01/2026, 10:22:00] David Thompson - RetailTech Solutions: Let me know if you need anything from our side for the filming
+[28/01/2026, 10:23:00] Lisa Wong - CloudScale Digital: Will do! I'll send you the production schedule this afternoon
+[28/01/2026, 10:24:00] David Thompson - RetailTech Solutions: 👍
+[28/01/2026, 15:00:00] David Thompson - RetailTech Solutions: Quick update - CFO gave initial thumbs up! She wants one small change to payment terms
+[28/01/2026, 15:02:00] Lisa Wong - CloudScale Digital: That's great news! What change is she looking for?
+[28/01/2026, 15:03:30] David Thompson - RetailTech Solutions: Instead of monthly billing for the $12K, can we do 50% upfront and 50% at end of quarter?
+[28/01/2026, 15:05:00] Lisa Wong - CloudScale Digital: Let me check with our finance team. That should be fine - we've done quarterly terms before
+[28/01/2026, 15:06:00] Lisa Wong - CloudScale Digital: TODO: Confirm quarterly payment terms with finance by tomorrow
+[28/01/2026, 15:07:00] David Thompson - RetailTech Solutions: Thanks! If that works, we should be able to sign contracts by Friday
+[28/01/2026, 15:08:00] Lisa Wong - CloudScale Digital: Amazing! I'll have the updated contract ready as soon as finance confirms
+[28/01/2026, 15:09:00] David Thompson - RetailTech Solutions: Perfect! This is moving fast 🎉
+[28/01/2026, 15:10:00] Lisa Wong - CloudScale Digital: That's what I like to hear! Feb 3rd launch is definitely happening
+[28/01/2026, 15:11:00] David Thompson - RetailTech Solutions: Excited! Talk to you tomorrow about the payment terms
+[28/01/2026, 15:12:00] Lisa Wong - CloudScale Digital: You got it! Have a great rest of your day 🚀

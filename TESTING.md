@@ -33,7 +33,7 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 
 **Expected outcome**:
 - ✅ Claude reads [skills/whatsapp-parser/skill.md](skills/whatsapp-parser/skill.md)
-- ✅ Parses 57 messages from the B2B sales conversation
+- ✅ Parses 74 messages from the B2B service conversation (agency → client)
 - ✅ Returns structured JSON with:
   - `metadata`: participants, message_count, date_range
   - `messages`: array with timestamp, sender, content
@@ -43,18 +43,18 @@ Parse the WhatsApp chat in examples/sample-whatsapp-chat.txt
 ```json
 {
   "metadata": {
-    "participants": ["Sarah Martinez - Automanus", "Michael Chen - TechCorp"],
-    "message_count": 57,
+    "participants": ["Lisa Wong - CloudScale Digital", "David Thompson - RetailTech Solutions"],
+    "message_count": 74,
     "date_range": {
-      "start": "27/01/2026, 14:23:15",
-      "end": "27/01/2026, 16:31:30"
+      "start": "27/01/2026, 09:15:00",
+      "end": "28/01/2026, 15:12:00"
     }
   },
   "messages": [...],
   "statistics": {
     "messages_per_person": {
-      "Sarah Martinez - Automanus": 28,
-      "Michael Chen - TechCorp": 29
+      "Lisa Wong - CloudScale Digital": 37,
+      "David Thompson - RetailTech Solutions": 37
     }
   }
 }
@@ -80,31 +80,33 @@ Summarize the WhatsApp chat in examples/sample-whatsapp-chat.txt
 
 **What you'll see**:
 ```markdown
-## Chat Summary: Jan 27, 2026
+## Chat Summary: Jan 27-28, 2026
 
 ### TL;DR
-B2B sales conversation between Automanus sales rep and TechCorp buyer.
-Discussed pricing ($850/month for 15 seats), scheduled technical deep dive
-for Thursday 3pm PST, and planned 14-day POC starting Feb 3rd.
+CloudScale Digital (marketing agency) discussing Q1 campaign with RetailTech Solutions client.
+Negotiated $45K quarterly budget ($36K ads + $9K videos) projecting 500-600 leads and
+$600K-720K in new revenue. CFO approved with payment term adjustments. Feb 3rd launch confirmed.
 
 ### Key Decisions
-- ✅ Thursday 3pm PST technical call with VP of Sales and Head of Ops
-- ✅ 14-day POC to test lead follow-up and meeting scheduling workflows
-- ✅ Professional plan at $850/month (vs current $1200/month on Zapier/Make)
-- ✅ Target POC start: Feb 3rd
+- ✅ Q1 budget approved: $45K total ($12K/month ads + $9K video production)
+- ✅ Performance bonus structure: 500-600 leads = base, 600-700 = +10%, 700+ = +20%
+- ✅ Payment terms: 50% upfront, 50% end of quarter (vs monthly billing)
+- ✅ Campaign launch: Feb 3rd, case study videos launch Feb 15th
+- ✅ Backup customer confirmed (MegaMart) after Acme Retail reschedule
 
 ### Topics Discussed
-1. **Product Demo Follow-up** - Post-demo qualification and discovery
-2. **Pricing & ROI** - $850/month vs $1200/month current spend
-3. **Stakeholder Coordination** - Looping in Jennifer (VP Sales) and David (Head Ops)
-4. **Compliance** - HIPAA, SOC 2 Type II requirements
-5. **POC Planning** - 2 workflow test, Feb 3rd start date
+1. **Q1 Campaign Planning** - 15 LinkedIn posts, 8 blogs, 3 case study videos
+2. **Budget Negotiation** - $8K → $12K/month (InMail, retargeting, A/B testing)
+3. **ROI Analysis** - $45K investment → 500-600 leads → 75-90 customers → $600K-720K revenue
+4. **Stakeholder Management** - CMO approval, CFO budget approval, payment terms
+5. **Project Logistics** - Customer filming schedules, backup plans, deliverable timelines
 
 ### Action Items Found
-- Send case studies (SaaS B2B focus)
-- Calendar invite for Thursday 3pm PST
-- Prepare HIPAA compliance documentation
-- Create POC proposal
+- Send testimonial scripts (completed same day)
+- Contact backup customers for filming (completed - MegaMart confirmed)
+- Send Q1 proposal with ROI projections (completed next morning)
+- Confirm payment terms with finance (pending)
+- Schedule MegaMart filming for next Tuesday (pending)
 ```
 
 ---
@@ -130,21 +132,26 @@ Extract all action items and TODOs from examples/sample-whatsapp-chat.txt
 ## Action Items Extracted
 
 ### High Priority 🔴
-- [ ] **Send case studies** - @Sarah Martinez - Due: Within 1 hour
-  > Context: SaaS B2B focused case studies for TechCorp
-- [ ] **Send calendar invite** - @Sarah Martinez - Due: ASAP
-  > Context: Thursday 3pm PST with Michael, Jennifer, David + Tom
+- [x] **Send testimonial scripts** - @Lisa Wong - Due: EOD today
+  > Context: Customer case study filming scripts for client review
+  > Status: ✅ Completed same day (2:30pm)
+- [ ] **Send Q1 proposal** - @Lisa Wong - Due: Tomorrow 10am
+  > Context: Complete proposal with ROI projections for CFO approval
+  > Status: ✅ Completed next morning
 
 ### Medium Priority 🟡
-- [ ] **Prepare HIPAA compliance docs** - @Sarah Martinez - Due: Before Thursday
-  > Context: TechCorp handles healthcare clients
-- [ ] **Create POC proposal** - @Sarah Martinez - Due: Before Thursday
-  > Context: 14-day POC for lead follow-up + meeting scheduling
-- [ ] **Prep stakeholders for call** - @Michael Chen - Due: Before Thursday
-  > Context: Brief Jennifer and David on Automanus capabilities
+- [x] **Contact backup customers** - @Lisa Wong - Due: By Wednesday
+  > Context: Acme Retail rescheduled, need replacement for filming
+  > Status: ✅ Completed (MegaMart confirmed for next Tuesday)
+- [ ] **Schedule MegaMart filming** - @Lisa Wong - Due: Next Tuesday
+  > Context: Replacement filming session to stay on Feb 15 launch schedule
+- [ ] **Confirm payment terms** - @Lisa Wong - Due: By tomorrow
+  > Context: CFO wants 50% upfront + 50% end of quarter instead of monthly
+- [ ] **Review scripts** - @David Thompson - Due: By tomorrow
+  > Context: Review testimonial scripts with team before filming
 
 ### Summary
-Total: 5 items | High priority: 2 | All assigned and time-bound
+Total: 6 items | Completed: 3 (50%) | High priority: 2 | All time-bound and assigned
 ```
 
 ---

@@ -177,21 +177,28 @@ Expected: Service account setup, API enablement, credentials configuration.
 
 ### Sample Data Explanation
 
-The `examples/sample-whatsapp-chat.txt` contains a **synthetic B2B sales conversation** (no real data) between:
-- **Sarah Martinez** - Sales rep at Automanus (AI automation platform)
-- **Michael Chen** - Buyer at TechCorp (SaaS company)
+The `examples/sample-whatsapp-chat.txt` contains a **synthetic B2B service conversation** (no real data) between:
+- **Lisa Wong** - Account manager at CloudScale Digital (marketing agency)
+- **David Thompson** - Client at RetailTech Solutions (SaaS company)
 
 The conversation includes:
-- Post-demo follow-up discussion
-- Discovery questions (team size, pain points, current tools)
-- Pricing and timeline negotiation
-- Multi-stakeholder coordination (looping in VP of Sales, Head of Ops)
-- Meeting scheduling and POC planning
-- Compliance questions (HIPAA, SOC 2)
-- Multiple action items and TODOs
-- Case study sharing and follow-ups
+- Q1 marketing campaign planning and budget discussion
+- Proposal negotiations ($45K quarterly investment → $600K-720K projected revenue)
+- Budget approval workflows (CFO sign-off, payment terms)
+- Multiple stakeholder coordination (CMO, CFO, internal teams)
+- Project management: filming schedules, content calendars, deliverables
+- Client relationship management: handling changes, backup plans, timeline pressures
+- Multiple action items with deadlines and accountability
+- Natural follow-ups and status updates over 2 days
 
-This gives you realistic B2B sales patterns to test all skills without any privacy concerns - perfect for demonstrating automanus.io use cases!
+**Perfect for automanus.io use cases:**
+- Service businesses (agencies, consultancies, contractors)
+- Client communication tracking
+- Action item extraction from ongoing projects
+- Budget and timeline management
+- Multi-threaded conversation summarization
+
+This gives you realistic B2B service delivery patterns to test all skills without any privacy concerns!
 
 ---
 
